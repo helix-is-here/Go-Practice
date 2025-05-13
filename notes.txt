@@ -6,11 +6,28 @@ import (
 )
 
 func main() {
+	// call a function
 	fmt.Println(quote.Go())
+
+	// declare a variable
+	var my_num number
+
+	// initialize a variable
+	my_num = 2
+
+	// the := operator is a shortcut for declaring and initializing a variable in one line
+	// (Go uses the value on the right to determine the variable's type).
+	name := "Jake"
 }
 
+//// -----------------
+//// Terminal Commands
+//// -----------------
+// creates a place to store modules
+go mod init github.com/helix-is-here/Go-Practice/tree/main/2-create-a-module/greetings
 
-// Terminal Commands
-go mod init // creates a place to store modules
-go run . // runs main (I think?)
-go mod tidy // downloads all modules that need to be imported
+// runs main function (I think?)
+go run . 
+
+ // downloads all modules that need to be imported
+go mod tidy
