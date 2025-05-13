@@ -20,6 +20,8 @@ func main() {
 	name := "Jake"
 }
 
+// functions that start with a lowercase letter are only accessible to code in its own package
+
 //// -----------------
 //// Terminal Commands
 //// -----------------
