@@ -1,3 +1,20 @@
+//// -----------------
+//// Project Setup
+//// -----------------
+
+// creates a place to store modules
+go mod init github.com/helix-is-here/Go-Practice/tree/main/2-create-a-module/greetings
+
+// runs main function (I think?)
+go run . 
+
+ // downloads all modules that need to be imported
+go mod tidy
+
+//// -----------------
+//// Go Coding
+//// -----------------
+
 package main
 
 import (
@@ -22,14 +39,14 @@ func main() {
 
 // functions that start with a lowercase letter are only accessible to code in its own package
 
-//// -----------------
-//// Terminal Commands
-//// -----------------
-// creates a place to store modules
-go mod init github.com/helix-is-here/Go-Practice/tree/main/2-create-a-module/greetings
+// Maps
+// In Go, you initialize a map with the following syntax: make(map[key-type]value-type)
 
-// runs main function (I think?)
-go run . 
+//// ------------
+//// UNIT TESTING 
+//// ------------
 
- // downloads all modules that need to be imported
-go mod tidy
+// Ending a file's name with _test.go tells the go test command that this file contains test functions.
+
+go test
+go test -v
